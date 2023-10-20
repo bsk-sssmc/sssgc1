@@ -7,12 +7,14 @@ export default function Navbar() {
     <>
       <div className="flex flex-row gap-8 justify-start align-middle text-white">
         <div className="cursor-pointer">
-          <Image
-            src="/assets/images/logo1.png"
-            width={120}
-            height={120}
-            alt="sri sathya sai global council logo"
-          />
+          <Link href={`/`} as={`/`} passHref>
+            <Image
+              src="/assets/images/logo1.png"
+              width={120}
+              height={120}
+              alt="sri sathya sai global council logo"
+            />
+          </Link>
         </div>
         <div className="flex flex-row gap-3 align-middle">
           <div className="hover:text-slate-300 hover: px-3">

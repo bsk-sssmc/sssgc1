@@ -1,16 +1,6 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import Navbar from "@/components/common/Navbar";
-import Footer from "@/components/common/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+export default function SriSathyaSai() {
   return (
     <>
-      <div className="top-0 bg-blue-900 p-4 font-bold text-base navbar-main">
-        <Navbar />
-      </div>
       <div className="flex flex-col w-[80vw] justify-center mx-auto">
         <div className="post-cat sri-sathya-sai flex justify-center text-7xl p-20">
           <h2>Who is Sri Sathya Sai?</h2>
@@ -776,12 +766,6 @@ export default function Home() {
           earnestly from Him. And once we have that, our lives too, just like
           the Avatar’s, will transform into a saga of perennial bliss
         </p>
-      </div>
-
-      <div className="flex bg-blue-900 text-white footer justify-center">
-        <div className="relative bottom-0  w-[50vw] justify-center p-4 font-bold text-base navbar-main">
-          <Footer />
-        </div>
       </div>
     </>
   );
