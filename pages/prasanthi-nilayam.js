@@ -26,11 +26,11 @@ export default function Home() {
         </div>
         <div className="text-xl flex justify-center text-justify w-[60vw] m-auto p-10">
           <p>
-            Sri Sathya Sai Baba's Mahasamadhi is in Sai Kulwant Hall. Here daily
-            prayers such as Omkaram, Suprabhatam, Vedam and Bhajans are offered
-            to Sri Sathya Sai Baba. Swami declared that He will never leave
-            Prasanthi Nilayam. Please click here to get latest information on
-            Ashram timings and programs.
+            Sri Sathya Sai Baba&apos;s Mahasamadhi is in Sai Kulwant Hall. Here
+            daily prayers such as Omkaram, Suprabhatam, Vedam and Bhajans are
+            offered to Sri Sathya Sai Baba. Swami declared that He will never
+            leave Prasanthi Nilayam. Please click here to get latest information
+            on Ashram timings and programs.
           </p>
         </div>
         <div className="post-cat sri-sathya-sai flex flex-col m-auto text-center justify-center text-3xl pb-8">
