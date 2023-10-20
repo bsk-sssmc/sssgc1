@@ -1,27 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Rocker&family=UnifrakturCook:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gabarito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+p {
+  font-family: "Raleway", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.page-title h1 {
+  font-family: "UnifrakturCook", cursive;
+}
+
+.post-title h2 {
+  font-family: "Abril Fatface", serif !important;
+  font-size: xx-large;
+}
+
+.post-cat h2 {
+  font-family: "DM Serif Display", serif;
+}
+
+.post-loc p {
+  color: grey;
+}
+
+.post-small h5 {
+  font-family: "DM Serif Display", serif;
+  font-size: smaller;
+}
+
+.post-small h4 {
+  font-family: "Abril Fatface", serif !important;
+}
+
+.post-small-loc p {
+  font-size: xx-small;
+}
+
+hr.icon {
+  padding: 0;
+  border: 0;
+  border-top: solid 3px;
+  text-align: center;
+}
+
+hr.icon2 {
+  padding: 0;
+  border: 0;
+  border-top: solid 3px;
+  text-align: center;
+}
+
+.marquee {
+  background-color: yellow;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.marquee p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+  text-transform: uppercase;
+}
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.navbar-main {
+  font-family: "Gabarito", cursive;
+}
+
+.footer {
 }
