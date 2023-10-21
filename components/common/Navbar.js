@@ -7,12 +7,14 @@ export default function Navbar() {
     <>
       <div className="flex flex-row gap-8 justify-start align-middle text-white">
         <div className="cursor-pointer">
-          <Image
-            src="/assets/images/logo1.png"
-            width={120}
-            height={120}
-            alt="sri sathya sai global council logo"
-          />
+          <Link href={`/`} as={`/`} passHref>
+            <Image
+              src="/assets/images/logo1.png"
+              width={120}
+              height={120}
+              alt="sri sathya sai global council logo"
+            />
+          </Link>
         </div>
         <div className="flex flex-row gap-3 align-middle">
           <div className="hover:text-slate-300 hover: px-3">
@@ -39,7 +41,14 @@ export default function Navbar() {
             </Link>
           </div>
           <div className="hover:text-slate-300 px-3">
-            <h2>Community Engagement</h2>
+            <Link href={`/activites`} as={`/activities`} passHref>
+              <h2>GC Activities</h2>
+            </Link>
+          </div>
+          <div className="hover:text-slate-300 px-3">
+            <Link href={`/updates`} as={`/updates`} passHref>
+              <h2>Updates</h2>
+            </Link>
           </div>
           <div className="hover:text-slate-300 px-3">
             <h2>Learning Resources</h2>
