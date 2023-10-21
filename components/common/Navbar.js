@@ -41,7 +41,14 @@ export default function Navbar() {
             </Link>
           </div>
           <div className="hover:text-slate-300 px-3">
-            <h2>Community Engagement</h2>
+            <Link href={`/activites`} as={`/activities`} passHref>
+              <h2>GC Activities</h2>
+            </Link>
+          </div>
+          <div className="hover:text-slate-300 px-3">
+            <Link href={`/updates`} as={`/updates`} passHref>
+              <h2>Updates</h2>
+            </Link>
           </div>
           <div className="hover:text-slate-300 px-3">
             <h2>Learning Resources</h2>
