@@ -3,12 +3,8 @@ import Image from "next/image";
 export default function UpdatesIndex() {
   return (
     <>
-      <div className="w-[80%] m-auto pt-16">
-        <div className="page-title header text-5xl lg:text-7xl text-center">
-          <h1>Sri Sathya Sai Global Council</h1>
-        </div>
-      </div>
-      <div class="mt-10 marquee">
+      
+      <div className="mt-10 marquee">
         <p className="font-bold">
           Upcoming Events:{" "}
           <span>

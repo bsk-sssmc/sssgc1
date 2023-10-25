@@ -71,6 +71,33 @@ hr.icon2 {
   animation: marquee 15s linear infinite;
   text-transform: uppercase;
 }
+.nav-logo{
+ position: relative;
+  
+}
+.nav-logo img{
+  
+  background-color: rgba(255,255,255,1);
+  border: 3px solid #888;
+  padding: 9px;
+  border-radius: 50%;
+  shape-outside: circle();
+}
+
+.nav-logo img.setfixed{
+  position: fixed;
+  top:7px;
+  left: 7px;
+  padding: 15px 15px 15px 15px;
+  z-index: 999;
+}
+
+#navbar-dropdown{
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  flex: 1;
+}
 @keyframes marquee {
   0% {
     transform: translate(0, 0);
